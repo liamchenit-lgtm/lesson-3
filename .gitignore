@@ -1,0 +1,15 @@
+.DS_Store
+.vscode/
+.claude/
+
+# Local build outputs
+/main
+/my_program
+*.o
+*.obj
+*.exe
+*.bin
+*.elf
+*.dSYM/
+build/
+
