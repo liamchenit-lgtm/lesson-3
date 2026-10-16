@@ -29,50 +29,23 @@ int calculateSum(int a, int b) {
     return a + b; 
 }
 
-
+/*
+// Practice 1: Try making a function that takes in a temperature in Celsius and converts it to Fahrenheit.
 // You can use the formula: Fahrenheit = (Celsius * 9/5) + 32
-double celsiusToFah(double celsius) {
-    return (celsius * 9/5) + 32;
-}
+double celsiusToFah(double celsius) {}
+
 // Practice 2: Create a function that takes two numbers and returns the larger of the two.
-int larger(int a, int b) {
-    if (a > b){
-        return a;
-    }else {
-        return b;
-    }
-}
+int larger(int a, int b) {}
 
 // Practice 3: Create a function that prints the the sum of the first n natural numbers.
-int sumNatural(int n) {
-    int sum = 0;
-    for (int i = 1; i <= n; i++) {
-        sum += i;
-    }
-    cout << sum << endl;
-    return sum;
-}
+int sumNatural(int n) {}
 
 // Practice 4: Create a function that returns the number of times a specific number appears in an array.
-int frequency(int arr[], int size, int x) {
-    int count = 0;
-    for (int i = 0; i < size; i++){
-        if (x == arr[i]){
-            count += 1;
-        }
-    }
-    return count;
-}
+int frequency(int arr[], int size, int x) {}
 
 // Practice 5: Write a function that returns true or false if the array is sorted in ascending order.
-bool isSorted(int arr[], int size) {
-    for (int i = 1; i < size; i ++){
-        if (arr[i] < arr[i-1]){
-            return false;
-        }
-    }
-    return true;
-} 
+bool isSorted(int arr[], int size) {}
+*/
 
 
 
@@ -91,8 +64,6 @@ void scopeExample() {
 
 
 
-
-
 //================= Part 3: Classes and OOP =================
 /*
 Classes are blueprints for creating objects. 
@@ -101,7 +72,7 @@ For example, we can create a class called "Car" that has properties like brand, 
 It also has methods (functions), such as displaying car information.
 */
 class Car {
-public :
+public:
     // Properties or attributes of the Car class
     string brand;
     string model;
@@ -163,7 +134,6 @@ public:
             cout << "Invalid deposit amount." << endl;
         }
     }
-
 
     void displayBalance() const {
         cout << "Account Holder: " << accountHolderName << endl;
@@ -259,47 +229,11 @@ Then create two derived classes: "Circle" and "Rectangle" that override the area
 
 
 
-// int frequency(int arr[], int size, int x) {
-//     int count = 0;
-//     for (int i = 0; i < size; i++){
-//         if (x == arr[i]){
-//             count += 1;
-//         }
-//     }
-//     return count;
-// }
 
-// // Practice 5: Write a function that returns true or false if the array is sorted in ascending order.
-// bool isSorted(int arr[], int size) {
-//     for (int i = 1; i < size; i ++){
-//         if (arr[i] < arr[i-1]){
-//             return false;
-//         }
-//     }
-//     return true;
-// } 
-
-// bool isSorted2(int arr[], int size) {
-//     // {1,2,3,4}
-//     int n=arr[0];
-//     for(int i=1;i<size;i++) {
-//         cout << i << endl;
-//         if (n<arr[i]) {
-//             n=arr[i];
-//         } else {
-//             cout << i <<"arr[i]"<< arr[i] << "n:"<< n << endl;
-//             return false;
-//         }
-//     }
-//     return true;
-// }
 
 int main() {
-    // int testarry[] = {1,2,3,4,5};
-    // isSorted2(testarry, 5);
-    // cout 
-    // frequency(testarry, 5, 2);
-    // printMessage(); // Calling the function to execute its code
+
+    //printMessage(); // Calling the function to execute its code
 
 /* 
     // Data that is inputed into the function are called arguments
@@ -322,38 +256,33 @@ int main() {
 */
 
 
+/* 
     // Creating an object of the Car class
     Car myCar;
     myCar.brand = "Toyota";
     myCar.model = "Corolla";    
-    // // // You can also explicity get the properties of the object
+    myCar.year = 2020;
+    // You can also explicity get the properties of the object
     cout << "My car's brand is: " << myCar.brand << endl;
+*/
 
 
-    // // string brand = "Tesla"; 
-    // // int year = 2021;
-    // // cout << "second car's brand is: " << brand << endl;
-
-
-    // // // Creating an object of the ImprovedCar class using the constructor
+/* 
+    // Creating an object of the ImprovedCar class using the constructor
     ImprovedCar myImprovedCar("Honda", "Civic", 2021);
+    ImprovedCar anotherCar("Ford", "Mustang", 2022);
+    // Displaying car information using the method
     myImprovedCar.displayInfo();
-    // ImprovedCar anotherCar("Ford", "Mustang", 2022);
-    // // // Displaying car information using the method
-    // myImprovedCar.displayInfo();
-    // anotherCar.displayInfo();
+    anotherCar.displayInfo();
+*/
 
-    // BankAccount mybank("liamBank", 12345, 9);
-    // mybank.deposit(10);
-    // mybank.displayBalance();
-    
 
 /* 
     EncapsulatedCar myEncapsulatedCar(2023);
     cout << "The year of the encapsulated car is: " << myEncapsulatedCar.year << endl;
     //cout << "The year of the encapsulated car is: " << myEncapsulatedCar.getCarYear() << endl;
 */
-    
+
 
 /* 
     Pig myPig;
